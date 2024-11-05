@@ -33,13 +33,13 @@ function App() {
           <span>{darkMode ? "Dark Mode" : "Light Mode"}</span>
           {darkMode ? (
             <img
-              src="../assets/moon.svg"
+              src="/moon.svg"
               alt="Moon"
               className="w-6 h-6 animate-pulse"
             />
           ) : (
             <img
-              src="../assets/sun.svg"
+              src="/sun.svg"
               alt="Sun"
               className="w-6 h-6 animate-pulse"
             />
