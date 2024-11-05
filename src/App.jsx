@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react"; // Import useState
 import Emoji from "./Emoji";
 import emojipedia from "./emojipedia";
+import { ThemeProvider, createTheme, CssBaseline, Switch } from "@mui/material";
 
 function emojis(emot) {
   return (
@@ -14,54 +15,47 @@ function emojis(emot) {
 }
 
 function App() {
-  return (
-    <div>
-      <h1>
-        <span className="shadow-2xl rounded-3xl">emoji pedia</span>
-      </h1>
-      <dl className="dictionary ">{emojipedia.map(emojis)}</dl>
+  const [darkMode, setDarkMode] = useState(false); // Initialize darkMode state
 
-      {/* <dl className="dictionary">
-        <div className="term">
-          <dt>
-            <span className="emoji" role="img" aria-label="Tense Biceps">
-              💪
-            </span>
-            <span>Tense Biceps</span>
-          </dt>
-          <dd>
-            “You can do that!” or “I feel strong!” Arm with tense biceps. Also
-            used in connection with doing sports, e.g. at the gym.
-          </dd>
+  const theme = createTheme({
+    palette: {
+      mode: darkMode ? "dark" : "light",
+    },
+  });
+
+  return (
+    <ThemeProvider theme={theme}>
+      {" "}
+      {/* Wrap your application in ThemeProvider */}
+      <CssBaseline /> {/* This will apply the baseline styles */}
+      <div className="flex justify-end items-center p-4">
+        <div className="flex items-center space-x-2">
+          <span>{darkMode ? "Dark Mode" : "Light Mode"}</span>
+          {darkMode ? (
+            <img
+              src="../assets/moon.svg"
+              alt="Moon"
+              className="w-6 h-6 animate-pulse"
+            />
+          ) : (
+            <img
+              src="../assets/sun.svg"
+              alt="Sun"
+              className="w-6 h-6 animate-pulse"
+            />
+          )}
+          <Switch
+            checked={darkMode}
+            onChange={() => setDarkMode(!darkMode)} // Toggle dark mode
+            inputProps={{ "aria-label": "controlled" }}
+          />
         </div>
-        <div className="term">
-          <dt>
-            <span className="emoji" role="img" aria-label="Tense Biceps">
-              🙏
-            </span>
-            <span>Person With Folded Hands</span>
-          </dt>
-          <dd>
-            Two hands pressed together. Is currently very introverted, saying a
-            prayer, or hoping for enlightenment. Is also used as a “high five”
-            or to say thank you.
-          </dd>
-        </div>
-        <div className="term">
-          <dt>
-            <span className="emoji" role="img" aria-label="Tense Biceps">
-              🤣
-            </span>
-            <span>Rolling On The Floor, Laughing</span>
-          </dt>
-          <dd>
-            This is funny! A smiley face, rolling on the floor, laughing. The
-            face is laughing boundlessly. The emoji version of “rofl“. Stands
-            for „rolling on the floor, laughing“.
-          </dd>
-        </div>
-      </dl> */}
-    </div>
+      </div>
+      <h1>
+        <span className="shadow-2xl rounded-3xl">Emoji Pedia</span>
+      </h1>
+      <dl className="dictionary">{emojipedia.map(emojis)}</dl>
+    </ThemeProvider>
   );
 }
 

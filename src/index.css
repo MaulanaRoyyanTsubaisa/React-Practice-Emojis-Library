@@ -38,15 +38,12 @@ h1 span {
   max-width: 20rem;
   margin-bottom: 3rem;
   padding: 2rem;
-  background-color: #fff;
+  /* background-color: #fff; */
   transition: all 100ms ease-in-out;
   box-shadow: 1px 4px 20px 7px #888888;
   border-radius: 25px;
 }
 
-.dictionary > .term > dt {
-  margin-bottom: 1rem;
-}
 
 dt {
   color: #2ec2b0;
