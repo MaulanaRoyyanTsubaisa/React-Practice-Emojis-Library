@@ -6,3 +6,10 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+--
+
+
+You can also open it in localhost, or enjoy the preview video below instead :smile:
+
+https://react-practice-emojis-library.vercel.app/https://react-practice-emojis-library.vercel.app/
