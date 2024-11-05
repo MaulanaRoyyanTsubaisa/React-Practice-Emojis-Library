@@ -12,4 +12,4 @@ Currently, two official plugins are available:
 
 You can also open it in localhost, or enjoy the preview video below instead :smile:
 
-https://react-practice-emojis-library.vercel.app/https://react-practice-emojis-library.vercel.app/
+https://react-practice-emojis-library.vercel.app
