@@ -1,0 +1,88 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.666;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='2560' height='1440' preserveAspectRatio='none' viewBox='0 0 2560 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1071%26quot%3b)' fill='none'%3e%3cpath d='M495.600435859193 331.6346883424313L108.59815952468023 235.14418368818244 399.10993120494413 718.636964676944z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1914.095078729953 415.22229449095533L2191.49720525936 147.33817479389546 1923.6130855622998-130.06395173551124 1646.2109590328932 137.8201679615487z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1148.953%2c330.003C1198.191%2c328.304%2c1233.94%2c287.023%2c1255.867%2c242.904C1275.211%2c203.982%2c1273.271%2c159.568%2c1252.681%2c121.29C1230.802%2c80.616%2c1194.982%2c47.937%2c1148.953%2c44.141C1095.667%2c39.747%2c1037.591%2c55.145%2c1010.653%2c101.33C983.567%2c147.769%2c1000.623%2c204.751%2c1028.445%2c250.753C1055.112%2c294.845%2c1097.455%2c331.78%2c1148.953%2c330.003' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M856.5619271946839 177.35717189659076L1063.0236829721412 369.88587386953895 1049.0906291676322-29.104583880866528z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M613.881966274171-79.2589607093391L349.5100618767499-32.643061022794875 396.12596156329414 231.72884337462622 660.4978659607152 185.11294368808197z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M965.761%2c1487.658C1061.758%2c1485.283%2c1141.611%2c1425.249%2c1193.021%2c1344.144C1249.184%2c1255.541%2c1294.712%2c1144.123%2c1240.414%2c1054.364C1187.199%2c966.396%2c1068.572%2c968.482%2c965.761%2c968.465C862.905%2c968.448%2c746.34%2c967.605%2c690.949%2c1054.272C632.683%2c1145.439%2c660.207%2c1264.52%2c718.148%2c1355.894C771.812%2c1440.523%2c865.583%2c1490.137%2c965.761%2c1487.658' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1858.711%2c734.383C1958.908%2c736.568%2c2057.495%2c694.584%2c2109.656%2c609.006C2163.885%2c520.035%2c2168.512%2c405.479%2c2112.88%2c317.378C2060.366%2c234.215%2c1957.055%2c213.139%2c1858.711%2c211.601C1756.714%2c210.005%2c1642.962%2c221.789%2c1590.385%2c309.205C1536.719%2c398.432%2c1570.464%2c510.405%2c1626.034%2c598.459C1677.414%2c679.874%2c1762.462%2c732.284%2c1858.711%2c734.383' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1503.319%2c1362.109C1649.416%2c1364.57%2c1759.46%2c1238.097%2c1822.362%2c1106.211C1876.601%2c992.489%2c1855.27%2c864.294%2c1792.981%2c754.774C1729.838%2c643.753%2c1630.684%2c554.774%2c1503.319%2c545.251C1357.819%2c534.372%2c1197.457%2c576.989%2c1127.469%2c705.014C1059.286%2c829.737%2c1131.793%2c972.38%2c1202.368%2c1095.765C1273.656%2c1220.396%2c1359.76%2c1359.69%2c1503.319%2c1362.109' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M607.17 788.97 a299.09 299.09 0 1 0 598.18 0 a299.09 299.09 0 1 0 -598.18 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1071'%3e%3crect width='2560' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  color: #555;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 500%;
+  text-align: center;
+  margin-top: 4rem;
+  color: #fff;
+  line-height: 1.2;
+}
+
+h1 span {
+  padding: 5px 15px;
+  background: #2ec2b0;
+}
+
+.dictionary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem auto;
+  max-width: 90%;
+}
+
+.dictionary > .term {
+  text-align: center;
+  max-width: 20rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #fff;
+  transition: all 100ms ease-in-out;
+  box-shadow: 1px 4px 20px 7px #888888;
+  border-radius: 25px;
+}
+
+.dictionary > .term > dt {
+  margin-bottom: 1rem;
+}
+
+dt {
+  color: #2ec2b0;
+  line-height: 1;
+}
+
+dt span {
+  font-size: 200%;
+  font-weight: 900;
+}
+
+.emoji {
+  margin: 0 auto 20px;
+  display: block;
+  font-size: 400%;
+}
+
+dd {
+  font-size: 92.5%;
+  margin-left: 0;
+}
+
+dd dt {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: inherit;
+}
+
+dd dl {
+  font-size: 90%;
+  margin: 1rem auto 0 auto;
+  letter-spacing: 0.33px;
+  max-width: 15rem;
+}
+
+dd dl .term {
+  margin-bottom: 1rem;
+}

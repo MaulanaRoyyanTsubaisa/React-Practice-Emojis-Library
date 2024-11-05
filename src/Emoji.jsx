@@ -1,0 +1,18 @@
+import React from "react";
+
+function Emoji(props) {
+  return (
+    <div className="term rounded-3xl">
+      
+      <dt>
+        <span className="emoji" role="img" aria-label="Tense Biceps">
+          {props.emoji}
+        </span>
+        <span>{props.name}</span>
+      </dt>
+      <dd>{props.description}</dd>
+    </div>
+  );
+}
+
+export default Emoji;
