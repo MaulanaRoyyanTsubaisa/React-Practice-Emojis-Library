@@ -35,7 +35,7 @@ function App() {
             <img
               src="/moon.svg"
               alt="Moon"
-              className="w-6 h-6 animate-pulse"
+              className={`w-6 h-6 animate-pulse ${darkMode ? 'icon-white' : ''}`}
             />
           ) : (
             <img

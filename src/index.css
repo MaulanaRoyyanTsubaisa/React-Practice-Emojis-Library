@@ -83,3 +83,7 @@ dd dl {
 dd dl .term {
   margin-bottom: 1rem;
 }
+
+.icon-white {
+  filter: invert(1); /* Mengubah warna menjadi putih */
+}
