@@ -3,17 +3,6 @@ import Emoji from "./Emoji";
 import emojipedia from "./emojipedia";
 import { ThemeProvider, createTheme, CssBaseline, Switch } from "@mui/material";
 
-function emojis(emot) {
-  return (
-    <Emoji
-      key={emot.id}
-      emoji={emot.emoji}
-      name={emot.name}
-      description={emot.meaning}
-    />
-  );
-}
-
 function App() {
   const [darkMode, setDarkMode] = useState(false); // Initialize darkMode state
 
@@ -35,14 +24,12 @@ function App() {
             <img
               src="/moon.svg"
               alt="Moon"
-              className={`w-6 h-6 animate-pulse ${darkMode ? 'icon-white' : ''}`}
+              className={`w-6 h-6 animate-pulse ${
+                darkMode ? "icon-white" : ""
+              }`}
             />
           ) : (
-            <img
-              src="/sun.svg"
-              alt="Sun"
-              className="w-6 h-6 animate-pulse"
-            />
+            <img src="/sun.svg" alt="Sun" className="w-6 h-6 animate-pulse" />
           )}
           <Switch
             checked={darkMode}
@@ -54,7 +41,16 @@ function App() {
       <h1>
         <span className="shadow-2xl rounded-3xl">Emoji Pedia</span>
       </h1>
-      <dl className="dictionary">{emojipedia.map(emojis)}</dl>
+      <dl className="dictionary">
+        {emojipedia.map((emot) => (
+          <Emoji
+            key={emot.id}
+            emoji={emot.emoji}
+            name={emot.name}
+            description={emot.meaning}
+          />
+        ))}
+      </dl>
     </ThemeProvider>
   );
 }
